@@ -25,8 +25,7 @@ _versions = [
 ]
 
 def _DB():
-    client = MongoClient(host='192.168.1.4',
-                            port=27017)
+    client = MongoClient(host='mongodb+srv://oxeansa:<db_password>@cluster0.sh0vm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     db = client.get_database("dbv202")
     return db
 
